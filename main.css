@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.digit-group {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 244, 212, 0.15);
+  border: 1px solid #ffe2743f;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #ffe274;
+  margin: 5px;
+  animation: box-glow 1s ease-in-out infinite alternate;
+}
+.control-pad{
+  margin: 30px;
+}
+.digit-group .splitter {
+  padding: 0 5px;
+  color: white;
+  font-size: 24px;
+}
+.grid-row{
+  display: flex;
+}
+
+.correct{
+  background-color: #ffe274;
+  color: #262522;
+  /*animation: glow 1s ease-in-out infinite alternate;
+  */
+}
+.semi-correct{
+  background-color: rgba(255, 239, 171, 0.42);
+  color: rgba(255, 237, 170, 0.93);
+}
+.wrong{
+  background-color: rgba(255, 157, 146, 0.28);
+  color: #fd5e5e;
+}
+.btn-all{
+  color: black;
+  border: 2px solid #ffe274;
+  border-radius: 9px;
+}
+.btn-correct{
+  background-color: limegreen;
+  color: black;
+}
+.btn-semi-correct{
+  background-color: #ffefab;
+  color: black;
+}
+.btn-wrong{
+  background-color: #fd5e5e;
+  color: black;
+}
+.btn-enter{
+  background-color: black;
+  font-weight: bold;
+  color: #ffe274;
+  width: 80px;
+}
+.info{
+  border: 1px solid #ffedaa;
+  color: #ffe274;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.won{
+  background-color: #ffe274;
+  color: navy;
+  border: 1px solid darkgreen;
+
+}
+.low-pad-element{
+  border: 1px solid #ffedaa;
+  padding: 4px;
+  margin:4px;
+}
+
+
+.prompt {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffe274;
+}
+
+
+.glow {
+  font-size: 21px;
+  color: #ffe274;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #ffe274, 0 0 6px #ffe274;
+  }
+
+  to {
+    text-shadow: 0 0 2px #fff, 0 0 4px #ffedaa, 0 0 6px #ffedaa, 0 0 8px #ffedaa;
+  }
+}
+
+@-webkit-keyframes box-glow {
+  from {
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #ffe274, 0 0 4px #ffe274, 0 0 5px #ffe274, 0 0 6px #ffe274, 0 0 7px #ffe274;
+  }
+
+  to {
+    box-shadow: 0 0 2px #fff, 0 0 3px rgba(255, 237, 170, 0.45), 0 0 4px rgba(255, 237, 170, 0.45), 0 0 5px rgba(255, 237, 170, 0.45), 0 0 6px rgba(255, 237, 170, 0.45), 0 0 7px rgba(255, 237, 170, 0.45), 0 0 8px rgba(255, 237, 170, 0.45);
+  }
+}
+/* shake */
+.shake-class{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(4px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-8px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(8px, 0, 0);
+  }
+}
+
+/* modal */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: rgba(19, 17, 11, 0.89);
+  color: #ffe274;
+  font-weight: bold;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ffe274;
+  width: 80%;
+  justify-content: center;
+  overflow: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.links{
+  color: #fd5e5e;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.foot-note{
+  padding: 15px;
+}
