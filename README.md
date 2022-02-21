@@ -28,7 +28,8 @@ Steps
 - Enter: Enter key
 - Escape: Reload the page
 
-
+# For Collaborator
+ One-third of the solver logic is still incomplete. Contact me if you wanna fill the glass.
 
 # Test the ultimate wordle solver
 Temporarily avalable at https://stackqu.com/
