@@ -19,6 +19,9 @@ Steps
 - - - try to choose most common word, click on it
 - - - repeat from first step
 - repeat until you win or lose ( Wining probability is around 86%)
+- THE HACK: Incase you wanna change to some other word or you played wordle upto certain step and you want help
+- - open console and type change_guess_word("the_word_here"); and press enter. The word will appear
+- - Then continue process as usual
 
 # KeyMap
 - A: Green, position of letter is correct
@@ -33,3 +36,5 @@ Steps
 
 # Test the ultimate wordle solver
 Temporarily avalable at https://stackqu.com/
+
+
