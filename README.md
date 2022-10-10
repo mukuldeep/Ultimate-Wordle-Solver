@@ -35,6 +35,6 @@ Steps
  One-third of the solver logic is still incomplete. Contact me if you wanna fill the glass.
 
 # Test the ultimate wordle solver
-Temporarily avalable at https://stackqu.com/
+Temporarily avalable at https://johnnn.tech/wordle-solver/
 
 
